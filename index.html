@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JSPDF</title>
+</head>
+<body>
+<div id="root" dir="auto"></div>
+
+<script type="text/babel">
+  function App() {
+    const properties = { header: 'Acme' }
+    const head = [["ID", "Name", "Country"]]
+    const body = [
+      [1, "Shaw", "Tanzania"],
+      [2, "Nelson", "Kazakhstan"],
+      [3, "Garcia", "Madagascar"],
+    ]
+    return (
+      <div>
+          hello sanga
+        <!--<PDF properties={properties} preview={true}>-->
+        <!--  <Text x={35} y={25} size={40}>Octonyan loves jsPDF</Text>-->
+        <!--  <AddPage />-->
+        <!--  <Table-->
+        <!--    head={head}-->
+        <!--    body={body}-->
+        <!--  />-->
+        <!--  <AddPage format='a6' orientation='l' />-->
+        <!--  <Text x={10} y={10} color='red'>Sample</Text>-->
+        <!--  <Line x1={20} y1={20} x2={60} y2={20}/>-->
+        <!--  <AddPage />-->
+        <!--  <Html sourceById='page' />-->
+        <!--</PDF>-->
+        <!--<div id="page" style={invisibleStyle}>-->
+        <!--  <h1 style={styleH1}>Source Html</h1>-->
+        <!--  <p>-->
+        <!--    <strong>lorem ipsumLorem </strong>-->
+        <!--    Ipsum is simply dummy text of the printing and-->
+        <!--    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever-->
+        <!--    since the 1500s, when an unknown printer took a galley of type and scrambled it to-->
+        <!--    make a type specimen book. It has survived not only five centuries, but also the-->
+        <!--    leap into electronic typesetting, remaining essentially unchanged. It was popularised-->
+        <!--    in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,-->
+        <!--    and more recently with desktop publishing software like Aldus PageMaker including-->
+        <!--    versions of Lorem Ipsum.-->
+        <!--  </p>-->
+        <!--</div>-->
+      </div>
+    )
+  }
+
+  ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+  );
+</script>
+
+<script src="https://unpkg.com/react@17.0.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/react/jsxLoader.min.js"></script>
+<script src="https://unpkg.com/browse/jspdf@1.5.2/dist/jspdf.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
